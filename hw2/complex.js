@@ -93,7 +93,7 @@ var start = function () {
 		getOnes(24);
 		getTwos(24);
 		xors = ones.concat(twos);
-		//xors = xors.reverse();
+		xors = xors.reverse();
 		read_file(filename.toString().split('\n')[0], function (err) {
 			doit();
 			process.stdin.on('data', start);
